@@ -1,6 +1,3 @@
-import Project from "@/components/projects/project";
-import { Container } from "@chakra-ui/react";
-import Image from "next/image";
 import Bio from "./bio";
 import NavigationHeader from "./navigation";
 import Profile from "./profile";
