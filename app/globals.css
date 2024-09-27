@@ -3,20 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #f2f0ef;
-  --foreground: #171717;
+  --color-background: #f5efe8;  /* Warm orange-gray background */
+  --color-background-alt: #e8dfd5;  /* Slightly darker for header/footer */
+  --color-text: #2d2926;  /* Dark gray, almost black */
+  --color-text-alt: #5f5750;  /* Lighter text color for less emphasis */
+  --color-accent: #d2691e;  /* Warm orange accent color */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--color-text);
+  background: var(--color-background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
