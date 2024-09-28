@@ -8,7 +8,7 @@ export default function Projects() {
 			description: "A browser-based farming sim. Plant seeds, harvest crops, and build an empire of lawn flamingos.",
 			deploymentLink: "https://react-virtual-garden.vercel.app",
 			githubLink: "https://github.com/lo-maxwell/react-virtual-garden",
-			imagePaths: ["/images/psyduck.jpg", "/images/usagyuuun.gif"],
+			imagePaths: ["/images/virtual-garden/1.png", "/images/virtual-garden/2.png", "/images/virtual-garden/3.png"],
 			technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "PostgreSQL"],
 			startDate: null,
 			endDate: null
@@ -18,7 +18,7 @@ export default function Projects() {
 			description: "A recreation of the classic game Minesweeper built with React and Next.js.",
 			deploymentLink: "https://minesweeper-boom.vercel.app/",
 			githubLink: "https://github.com/lo-maxwell/react-minesweeper",
-			imagePaths: ["/images/psyduck.jpg"],
+			imagePaths: ["/images/minesweeper/1.png", "/images/minesweeper/2.png"],
 			technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
 			startDate: null,
 			endDate: null
@@ -28,7 +28,7 @@ export default function Projects() {
 			description: "A recreation of the board game Mastermind built with React and Next.js.",
 			deploymentLink: "https://mastermind-bubbly.vercel.app/",
 			githubLink: "https://github.com/lo-maxwell/react-mastermind",
-			imagePaths: ["/images/psyduck.jpg"],
+			imagePaths: ["/images/mastermind/1.png", "/images/mastermind/2.png"],
 			technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
 			startDate: null,
 			endDate: null
@@ -38,7 +38,7 @@ export default function Projects() {
 			description: "An Android app inspired by the New York Times <a href='https://www.nytimes.com/puzzles/spelling-bee' target='_blank' rel='noopener noreferrer'>Spelling Bee</a>.",
 			deploymentLink: null,
 			githubLink: "https://github.com/lo-maxwell/PangramsGame",
-			imagePaths: ["/images/psyduck.jpg"],
+			imagePaths: ["/images/pangrams/1.jpg", "/images/pangrams/2.jpg", "/images/pangrams/3.jpg"],
 			technologies: ["Java", "Android"],
 			startDate: null,
 			endDate: null
