@@ -12,7 +12,7 @@ type TransitionStyle = {
 export default function ProjectComponent({ project }: { project: Project }) {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 	const [isTransitioning, setIsTransitioning] = useState(false);
-	const [transitionStyle, setTransitionStyle] = useState<TransitionStyle | {}>({});
+	const [transitionStyle, setTransitionStyle] = useState<TransitionStyle | null>(null);
 	const [nextImageIndex, setNextImageIndex] = useState<number | null>(null);
 	const [direction, setDirection] = useState<'next' | 'prev' | null>(null);
 
@@ -20,7 +20,7 @@ export default function ProjectComponent({ project }: { project: Project }) {
 		if (isTransitioning) {
 			const timer = setTimeout(() => {
 				setIsTransitioning(false);
-				setTransitionStyle({});
+				setTransitionStyle(null);
 				if (nextImageIndex !== null) {
 					setCurrentImageIndex(nextImageIndex);
 					setNextImageIndex(null);
@@ -52,7 +52,7 @@ export default function ProjectComponent({ project }: { project: Project }) {
 	return (
 		<div className="relative h-[28rem] rounded-xl overflow-hidden group">
 			<div className="relative w-full h-full overflow-hidden">
-				<div className="absolute w-full h-full" style={transitionStyle}>
+				<div className="absolute w-full h-full" style={transitionStyle || {}}>
 					<div className="absolute top-0 left-0 w-full h-full">
 						<Image
 							src={project.imagePaths[currentImageIndex]}
