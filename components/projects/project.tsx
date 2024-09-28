@@ -69,14 +69,14 @@ export default function ProjectComponent({ project }: { project: Project }) {
 					<>
 						<button
 							onClick={prevImage}
-							className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+							className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
 							aria-label="Previous image"
 						>
 							<ChevronLeftIcon className="h-6 w-6" />
 						</button>
 						<button
 							onClick={nextImage}
-							className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+							className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
 							aria-label="Next image"
 						>
 							<ChevronRightIcon className="h-6 w-6" />
