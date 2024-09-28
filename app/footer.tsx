@@ -6,7 +6,7 @@ export default function Footer() {
                     <p className="text-text">
                         Designed and Built by{" "}
                         <a
-                            href="https://github.com/lo-maxwell"
+                            href="https://github.com/lo-maxwell/personal-website"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="font-bold hover:text-accent"
