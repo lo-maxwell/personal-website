@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Profile() {
 	return (
 		<>
-		<div className="flex flex-col sm:flex-row items-center mx-auto justify-between sm:space-x-8">
-			<header className="mb-6 sm:mb-12 text-center sm:text-left">
+		<div className="flex flex-col sm:flex-row items-center mx-auto justify-between sm:space-x-8 mb-4">
+			<header className="mb-4 sm:mb-0 text-center sm:text-left">
 				<h1 className="text-4xl font-bold">Psyduck</h1>
 				<p className="text-xl mb-2">{`Web Developer & Designer`}</p>
 				<div className="flex items-center justify-between space-x-4">
@@ -66,7 +66,7 @@ export default function Profile() {
 				</div>
 			</header>
 			
-			<div className="mb-6 sm:mb-12 bg-gray-100 w-[100px] h-[100px] rounded-full border-4 border-gray-500 overflow-hidden flex-shrink-0">
+			<div className="mb-0 sm:mb-0 bg-gray-100 w-[100px] h-[100px] rounded-full border-4 border-gray-500 overflow-hidden flex-shrink-0">
 				<Image
 				src="/images/psyduck.jpg"
 				alt="icon"

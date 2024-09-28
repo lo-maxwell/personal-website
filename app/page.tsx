@@ -12,10 +12,18 @@ export default function Home() {
         <NavigationHeader/>
       </div>
 
-      <div className={`max-w-[600px] mx-auto my-4 px-4 sm:px-6 lg:px-8`}>
-        <Profile/>
-        <Bio/>
-        <Projects/>
+      <div className={`max-w-[600px] mx-auto my-4 px-4 sm:px-6 lg:px-8`}> {/* Reduced pt-8 for less top padding */}
+        <section id="profile" className="mb-8">
+          <Profile/>
+        </section>
+        
+        <section id="bio" className="mb-8">
+          <Bio/>
+        </section>
+        
+        <section id="projects" className="mb-8">
+          <Projects/>
+        </section>
       </div>
       <Footer/>
     </div>
