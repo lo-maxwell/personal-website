@@ -1,34 +1,81 @@
 'use client'
 import { Project } from '@/models/project';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
+
+type TransitionStyle = {
+	transform: string;
+	transition: string;
+};
 
 export default function ProjectComponent({ project }: { project: Project }) {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+	const [isTransitioning, setIsTransitioning] = useState(false);
+	const [transitionStyle, setTransitionStyle] = useState<TransitionStyle | {}>({});
+	const [nextImageIndex, setNextImageIndex] = useState<number | null>(null);
+	const [direction, setDirection] = useState<'next' | 'prev' | null>(null);
+
+	useEffect(() => {
+		if (isTransitioning) {
+			const timer = setTimeout(() => {
+				setIsTransitioning(false);
+				setTransitionStyle({});
+				if (nextImageIndex !== null) {
+					setCurrentImageIndex(nextImageIndex);
+					setNextImageIndex(null);
+				}
+				setDirection(null);
+			}, 300); // Match this with your transition duration
+			return () => clearTimeout(timer);
+		}
+	}, [isTransitioning, nextImageIndex]);
 
 	const nextImage = () => {
-		setCurrentImageIndex((prevIndex) => 
-			(prevIndex + 1) % project.imagePaths.length
-		);
+		if (isTransitioning) return;
+		setIsTransitioning(true);
+		setDirection('next');
+		const next = (currentImageIndex + 1) % project.imagePaths.length;
+		setNextImageIndex(next);
+		setTransitionStyle({ transform: 'translateX(-100%)', transition: 'transform 300ms ease-in-out' });
 	};
 
 	const prevImage = () => {
-		setCurrentImageIndex((prevIndex) => 
-			(prevIndex - 1 + project.imagePaths.length) % project.imagePaths.length
-		);
+		if (isTransitioning) return;
+		setIsTransitioning(true);
+		setDirection('prev');
+		const prev = (currentImageIndex - 1 + project.imagePaths.length) % project.imagePaths.length;
+		setNextImageIndex(prev);
+		setTransitionStyle({ transform: 'translateX(100%)', transition: 'transform 300ms ease-in-out' });
 	};
 
 	return (
 		<div className="relative h-[28rem] rounded-xl overflow-hidden group">
-			<div className="relative w-full h-full">
-				<Image
-					src={project.imagePaths[currentImageIndex]}
-					 alt={`${project.name} - Image ${currentImageIndex + 1}`}
-					layout="fill"
-					objectFit="cover"
-					className="w-full h-full"
-				/>
+			<div className="relative w-full h-full overflow-hidden">
+				<div className="absolute w-full h-full" style={transitionStyle}>
+					<div className="absolute top-0 left-0 w-full h-full">
+						<Image
+							src={project.imagePaths[currentImageIndex]}
+							alt={`${project.name} - Current Image`}
+							fill
+							sizes="100vw"
+							style={{ objectFit: 'cover' }}
+							className="w-full h-full"
+						/>
+					</div>
+					{nextImageIndex !== null && (
+						<div className="absolute top-0 w-full h-full" style={{ left: direction === 'next' ? '100%' : '-100%' }}>
+							<Image
+								src={project.imagePaths[nextImageIndex]}
+								alt={`${project.name} - Next Image`}
+								fill
+								sizes="100vw"
+								style={{ objectFit: 'cover' }}
+								className="w-full h-full"
+							/>
+						</div>
+					)}
+				</div>
 				<div className="absolute left-0 top-0 p-4">
 					<div className="inline-block bg-white bg-opacity-80 backdrop-blur-sm p-3 rounded-br-md shadow-md">
 						<h3 className="text-lg font-bold">{project.name}</h3>
