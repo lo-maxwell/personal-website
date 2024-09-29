@@ -49,6 +49,7 @@ export default function ProjectComponent({ project }: { project: Project }) {
 						alt={`${project.name} - Current Image`}
 						width={1920}
 						height={1080}
+						quality={95}
 						style={imageStyle}
 						className={`h-full w-auto max-w-none transition-opacity duration-300 ${
 							fadeIn ? 'opacity-100' : 'opacity-0'
