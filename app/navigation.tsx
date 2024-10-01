@@ -52,7 +52,7 @@ export default function NavigationHeader() {
 										<button onClick={() => scrollToSection('profile')} className="text-text-alt hover:text-text-alt">Profile</button>
 										<button onClick={() => scrollToSection('bio')} className="text-text-alt hover:text-text-alt">Bio</button>
 										<button onClick={() => scrollToSection('projects')} className="text-text-alt hover:text-text-alt">Projects</button>
-										<button className="text-text-alt hover:text-text-alt">Resume</button>
+										<a href="/documents/Maxwell Lo Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-text-alt hover:text-text-alt">Resume</a>
 									</div>
 								) : (
 									<button onClick={toggleMenu} className="text-text-alt">
@@ -72,7 +72,7 @@ export default function NavigationHeader() {
 							<button onClick={() => scrollToSection('profile')} className="block w-full text-left py-2 px-4 hover:bg-[#d0cecc] whitespace-nowrap">Profile</button>
 							<button onClick={() => scrollToSection('bio')} className="block w-full text-left py-2 px-4 hover:bg-[#d0cecc] whitespace-nowrap">Bio</button>
 							<button onClick={() => scrollToSection('projects')} className="block w-full text-left py-2 px-4 hover:bg-[#d0cecc] whitespace-nowrap">Projects</button>
-							<button className="block w-full text-left py-2 px-4 hover:bg-[#d0cecc] whitespace-nowrap">Resume</button>
+							<a href="/documents/Maxwell Lo Resume.pdf" target="_blank" rel="noopener noreferrer" className="block w-full text-left py-2 px-4 hover:bg-[#d0cecc] whitespace-nowrap">Resume</a>
 						</div>
 					)}
 			</div>
