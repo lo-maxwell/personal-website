@@ -6,7 +6,7 @@ export default function Profile() {
 			<header className="mb-4 sm:mb-0 text-center sm:text-left">
 				<h1 className="text-4xl font-bold">Maxwell Lo</h1>
 				<p className="text-xl mb-2">{`Aspiring Software Engineer`}</p>
-				<div className="flex items-center justify-start space-x-4">
+				<div className="flex items-center justify-center sm:justify-start space-x-4">
 				{/* Email Icon */}
 				<a
 					href="mailto:lo.maxwell8240@gmail.com"
