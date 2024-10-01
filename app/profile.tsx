@@ -67,10 +67,11 @@ export default function Profile() {
 			
 			<div className="mb-0 sm:mb-0 bg-gray-100 w-[100px] h-[100px] rounded-full border-4 border-gray-500 overflow-hidden flex-shrink-0">
 				<Image
-				src="/images/psyduck.jpg"
+				src="/images/profile.jpg"
 				alt="icon"
 				width={100}
 				height={100}
+				quality={90}
 				className="w-full h-full object-cover"
 				/>
 			</div>
