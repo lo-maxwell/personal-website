@@ -15,7 +15,7 @@ export default function Projects() {
 		},
 		{
 			name: "Minesweeper",
-			description: "A recreation of the classic game Minesweeper built with React and Next.js.",
+			description: "A recreation of the classic game Minesweeper built with React and Next.js. Features customizable grid sizes and a timer.",
 			deploymentLink: "https://minesweeper-boom.vercel.app/",
 			githubLink: "https://github.com/lo-maxwell/react-minesweeper",
 			imagePaths: ["/images/minesweeper/1.png", "/images/minesweeper/2.png"],
@@ -25,7 +25,7 @@ export default function Projects() {
 		},
 		{
 			name: "Mastermind",
-			description: "A recreation of the board game Mastermind built with React and Next.js.",
+			description: "A recreation of the board game Mastermind built with React and Next.js. Features customizable difficulty and a easy-to-use interface.",
 			deploymentLink: "https://mastermind-bubbly.vercel.app/",
 			githubLink: "https://github.com/lo-maxwell/react-mastermind",
 			imagePaths: ["/images/mastermind/1.png", "/images/mastermind/2.png"],
@@ -35,7 +35,7 @@ export default function Projects() {
 		},
 		{
 			name: "Pangrams Word Game",
-			description: "An Android app inspired by the New York Times <a href='https://www.nytimes.com/puzzles/spelling-bee' target='_blank' rel='noopener noreferrer'>Spelling Bee</a>.",
+			description: "An Android app inspired by the New York Times <a href='https://www.nytimes.com/puzzles/spelling-bee' target='_blank' rel='noopener noreferrer'>Spelling Bee</a>. Features procedurally generated puzzles, local score tracking, and an achievement system.",
 			deploymentLink: null,
 			githubLink: "https://github.com/lo-maxwell/PangramsGame",
 			imagePaths: ["/images/pangrams/1.jpg", "/images/pangrams/2.jpg", "/images/pangrams/3.jpg"],
@@ -47,13 +47,15 @@ export default function Projects() {
 	];
 
 	return (
-		<div className="max-w-2xl mx-auto px-4">
-		  <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
-		  <div className="space-y-10">
-			{projects.map((project) => (
-			  <ProjectComponent key={project.name} project={project} />
-			))}
-		  </div>
-		</div>
+		<>
+			<h2 className="text-3xl font-bold mb-8 text-center border-b-4 border-text-border inline-block mx-auto">My Projects</h2>
+			<div className="max-w-2xl mx-auto px-4">
+			<div className="space-y-10">
+				{projects.map((project) => (
+				<ProjectComponent key={project.name} project={project} />
+				))}
+			</div>
+			</div>
+		</>
 	  );
 }

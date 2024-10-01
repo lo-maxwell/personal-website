@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --color-background: #f5efe8;  /* Warm orange-gray background */
-  --color-background-alt: #e8dfd5;  /* Slightly darker for header/footer */
+  --color-background: #FFECC8;  /* Warm orange-gray background */
+  --color-background-alt: #FFD09B;  /* Slightly darker for header/footer */
   --color-text: #2d2926;  /* Dark gray, almost black */
-  --color-text-alt: #5f5750;  /* Lighter text color for less emphasis */
+  --color-text-alt: #5F4B32;  /* Lighter text color for less emphasis */
+  --color-text-border: #4d4946;  /* Lighter underline color, still dark gray */
   --color-accent: #d2691e;  /* Warm orange accent color */
 }
 

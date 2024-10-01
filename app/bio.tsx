@@ -2,9 +2,12 @@ export default function Bio() {
 	return (
 		<>
 		<div className="mb-6">
-			<h1 className="text-2xl font-bold mb-2">Bio</h1>
+			<h1 className="text-2xl font-bold border-b-4 border-text-border inline-block mb-3">Bio</h1>
 			<div className={`w-full hypens-auto break-words overflow-wrap`}>
-			Psyduck is a Water-type Pokémon known for its distinctive yellow, duck-like appearance and its perpetual headache, which triggers its psychic powers. Often seen holding its head in confusion, Psyduck is both comical and endearing, as it struggles to control its powerful yet unpredictable abilities. When its headache becomes too intense, Psyduck unleashes bursts of psychic energy that can have devastating effects, though it usually has no memory of what happens afterward. Despite its somewhat clumsy and absent-minded nature, Psyduck has a loyal following for its charm and unique blend of cuteness and mystery.
+			I am a recent graduate from the University of California, Berkeley with a B.S. in Electrical Engineering and Computer Science. I&apos;m passionate about building web applications, developing efficient backend systems, and learning new technologies. Currently, I&apos;m seeking opportunities in software engineering where I can apply my skills, gain exposure to new technologies and frameworks, and contribute to innovative projects.
+			</div>
+			<div className={`mt-4 w-full hypens-auto break-words overflow-wrap`}>
+			In my free time, I like designing my own games, baking and cooking, and playing a board game called Spirit Island.
 			</div>
 		</div>
 		</>

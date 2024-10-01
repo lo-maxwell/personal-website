@@ -14,6 +14,7 @@ const config: Config = {
         text: 'var(--color-text)',
         'text-alt': 'var(--color-text-alt)',
         accent: 'var(--color-accent)',
+        'text-border': 'var(--color-text-border)',
       },
     },
   },
