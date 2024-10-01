@@ -5,6 +5,6 @@ export interface Project {
   githubLink: string | null;
   imagePaths: string[];
   technologies: string[];
-  startDate: string | null; // Changed to string
-  endDate: string | null; // Changed to string
+  startDate: string | null;
+  endDate: string | null;
 }

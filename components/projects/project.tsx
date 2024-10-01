@@ -28,7 +28,7 @@ export default function ProjectComponent({ project }: { project: Project }) {
 		setTimeout(() => {
 			setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.imagePaths.length);
 			setFadeIn(true);
-		}, 300); // Match this with the CSS transition duration
+		}, 300);
 	};
 
 	const prevImage = () => {
@@ -36,7 +36,7 @@ export default function ProjectComponent({ project }: { project: Project }) {
 		setTimeout(() => {
 			setCurrentImageIndex((prevIndex) => (prevIndex - 1 + project.imagePaths.length) % project.imagePaths.length);
 			setFadeIn(true);
-		}, 300); // Match this with the CSS transition duration
+		}, 300);
 	};
 
 	return (
