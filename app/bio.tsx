@@ -9,6 +9,9 @@ export default function Bio() {
 			<div className={`mt-4 w-full hypens-auto break-words overflow-wrap`}>
 			In my free time, I like designing my own games, baking and cooking, and playing a board game called Spirit Island.
 			</div>
+			<div className={`mt-4 w-full hypens-auto break-words overflow-wrap`}>
+			Feel free to get in touch, whether about new opportunities or just to say hi!
+			</div>
 		</div>
 		</>
 	);
