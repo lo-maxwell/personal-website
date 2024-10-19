@@ -67,7 +67,7 @@ export default function Profile() {
 			
 			<div className="mb-0 sm:mb-0 bg-gray-100 w-[100px] h-[100px] rounded-full border-4 border-gray-500 overflow-hidden flex-shrink-0">
 				<Image
-				src="/images/profile.jpg"
+				src="/images/profile.png"
 				alt="icon"
 				width={100}
 				height={100}
