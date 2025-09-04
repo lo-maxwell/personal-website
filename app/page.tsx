@@ -11,7 +11,7 @@ export default function Home() {
         <NavigationHeader/>
       </div>
 
-      <div className={`max-w-[600px] mx-auto my-4 px-4 sm:px-6 lg:px-8`}>
+      <div className={`max-w-[800px] mx-auto my-4 px-4 sm:px-6 lg:px-8`}>
         <section id="profile" className="mb-8">
           <Profile/>
         </section>

@@ -5,11 +5,11 @@ export default function Projects() {
 	const projects: Project[] = [
 		{
 			name: "Garden Simulator",
-			description: "A browser-based farming sim. Plant seeds, harvest crops, and build an empire of lawn flamingos.",
+			description: "A browser-based farming sim. Plant seeds, harvest crops, and build an empire of geese.",
 			deploymentLink: "https://react-virtual-garden.vercel.app",
 			githubLink: "https://github.com/lo-maxwell/react-virtual-garden",
-			imagePaths: ["/images/virtual-garden/1.png", "/images/virtual-garden/2.png", "/images/virtual-garden/3.png"],
-			technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "PostgreSQL"],
+			imagePaths: ["/images/virtual-garden/4.png", "/images/virtual-garden/1.png", "/images/virtual-garden/2.png", "/images/virtual-garden/3.png"],
+			technologies: ["React", "TypeScript", "Next.js", "PostgreSQL", "AWS RDS", "AWS Lambda", "Firebase Auth"],
 			startDate: null,
 			endDate: null
 		},
