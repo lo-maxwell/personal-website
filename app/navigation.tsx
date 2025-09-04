@@ -40,7 +40,7 @@ export default function NavigationHeader() {
 			<div className="max-w-screen-xl mx-auto relative px-4 sm:px-0 py-4">
 					<div className="flex justify-between items-center sm:justify-center">
 						{/* Navigation content */}
-							<div className="flex items-center justify-between w-full sm:w-[600px]"> {/* Adjusted width */}
+							<div className="flex items-center justify-between w-full sm:w-[800px] mx-4"> {/* Adjusted width */}
 								{/* Name Button */}
 								<div className="flex-shrink-0">
 									<button className="text-lg font-bold text-text-alt">Maxwell Lo</button>
