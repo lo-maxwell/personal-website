@@ -48,7 +48,7 @@ export default function Projects() {
 
 	return (
 		<>
-			<h2 className="text-3xl font-bold mb-8 text-center border-b-4 border-text-border inline-block mx-auto">My Projects</h2>
+			<h2 className="text-2xl font-bold mb-8 text-center border-b-4 border-text-border inline-block mx-auto">My Projects</h2>
 			<div className="max-w-2xl mx-auto px-4">
 			<div className="space-y-10">
 				{projects.map((project) => (
