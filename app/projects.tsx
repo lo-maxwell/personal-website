@@ -4,12 +4,22 @@ import { Project } from "@/models/project"
 export default function Projects() {
 	const projects: Project[] = [
 		{
-			name: "Garden Simulator",
-			description: "A browser-based farming sim. Plant seeds, harvest crops, and build an empire of geese.",
+			name: "Goose Farm",
+			description: "A browser-based farming simulator. Plant seeds, harvest crops, and build an empire of geese.",
 			deploymentLink: "https://react-virtual-garden.vercel.app",
 			githubLink: "https://github.com/lo-maxwell/react-virtual-garden",
-			imagePaths: ["/images/virtual-garden/4.png", "/images/virtual-garden/1.png", "/images/virtual-garden/2.png", "/images/virtual-garden/3.png"],
+			imagePaths: ["/images/virtual-garden/1.png", "/images/virtual-garden/2.png", "/images/virtual-garden/3.png", "/images/virtual-garden/4.png"],
 			technologies: ["React", "TypeScript", "Next.js", "PostgreSQL", "AWS RDS", "AWS Lambda", "Firebase Auth"],
+			startDate: null,
+			endDate: null
+		},
+		{
+			name: "Baking Ingredient Substituter",
+			description: "A Next.js web app allowing users to find ingredient substitutions for baking recipes with LLM-generated explanations.",
+			deploymentLink: "https://ingredient-substituter.vercel.app",
+			githubLink: "https://github.com/lo-maxwell/ingredient-substitutor",
+			imagePaths: ["/images/ingredient-substituter/1.png", "/images/ingredient-substituter/2.png"],
+			technologies: ["React", "TypeScript", "Next.js", "MaterialUI", "GPT", "Redis"],
 			startDate: null,
 			endDate: null
 		},
@@ -19,16 +29,6 @@ export default function Projects() {
 			deploymentLink: "https://minesweeper-boom.vercel.app/",
 			githubLink: "https://github.com/lo-maxwell/react-minesweeper",
 			imagePaths: ["/images/minesweeper/1.png", "/images/minesweeper/2.png"],
-			technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-			startDate: null,
-			endDate: null
-		},
-		{
-			name: "Mastermind",
-			description: "A recreation of the board game Mastermind built with React and Next.js. Features customizable difficulty and a easy-to-use interface.",
-			deploymentLink: "https://mastermind-bubbly.vercel.app/",
-			githubLink: "https://github.com/lo-maxwell/react-mastermind",
-			imagePaths: ["/images/mastermind/1.png", "/images/mastermind/2.png"],
 			technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
 			startDate: null,
 			endDate: null
